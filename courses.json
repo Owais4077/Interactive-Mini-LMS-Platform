@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "image": "https://picsum.photos/seed/frontend/400/250",
+    "title": "Front-End Fundamentals",
+    "category": "Development",
+    "level": "Beginner",
+    "description": "Master HTML, CSS, and JavaScript basics to build modern, responsive websites from scratch.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Introduction to HTML",
+        "content": "HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. Learn how to structure content with semantic elements, forms, tables, and more."
+      },
+      {
+        "id": 2,
+        "title": "Styling with CSS",
+        "content": "CSS is used for describing the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, or in other media. Master selectors, the box model, flexbox, grid, and modern layout techniques."
+      },
+      {
+        "id": 3,
+        "title": "JavaScript DOM Manipulation",
+        "content": "The Document Object Model (DOM) is a programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content. Learn how to select elements, modify content, handle events, and create dynamic interactions."
+      },
+      {
+        "id": 4,
+        "title": "Responsive Design with Tailwind",
+        "content": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs. Learn how to create responsive layouts, use spacing utilities, and implement mobile-first design principles."
+      },
+      {
+        "id": 5,
+        "title": "Advanced Selectors",
+        "content": "Learn complex CSS selectors for powerful styling including pseudo-classes, pseudo-elements, attribute selectors, and combinators. Master specificity and the cascade to write maintainable CSS."
+      },
+      {
+        "id": 6,
+        "title": "ES6+ JavaScript Features",
+        "content": "Explore modern JavaScript features including arrow functions, destructuring, spread operators, template literals, promises, and async/await for cleaner, more efficient code."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/seed/uiux/400/250",
+    "title": "UI/UX Design Principles",
+    "category": "Design",
+    "level": "Intermediate",
+    "description": "Learn the fundamentals of user interface and user experience design to create beautiful, intuitive digital products.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Design Thinking Process",
+        "content": "Design thinking is a non-linear, iterative process that teams use to understand users, challenge assumptions, redefine problems and create innovative solutions. Learn the five stages: empathize, define, ideate, prototype, and test."
+      },
+      {
+        "id": 2,
+        "title": "Color Theory and Typography",
+        "content": "Understand how colors affect emotions and behavior. Learn about color harmony, contrast, and accessibility. Master typography principles including hierarchy, spacing, and font pairing for effective visual communication."
+      },
+      {
+        "id": 3,
+        "title": "Wireframing and Prototyping",
+        "content": "Create low and high-fidelity wireframes to visualize your design ideas. Learn prototyping techniques to test user flows and interactions before development begins."
+      },
+      {
+        "id": 4,
+        "title": "User Research Methods",
+        "content": "Discover various user research techniques including interviews, surveys, usability testing, and A/B testing to gather insights and validate design decisions."
+      },
+      {
+        "id": 5,
+        "title": "Design Systems",
+        "content": "Build scalable design systems with reusable components, style guides, and documentation to ensure consistency across products and improve team collaboration."
+      },
+      {
+        "id": 6,
+        "title": "Accessibility Standards",
+        "content": "Learn WCAG guidelines and best practices for creating inclusive designs that work for users with diverse abilities and disabilities."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/seed/datascience/400/250",
+    "title": "Data Science with Python",
+    "category": "Data Science",
+    "level": "Advanced",
+    "description": "Dive deep into data analysis, visualization, and machine learning using Python's powerful libraries.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Python for Data Analysis",
+        "content": "Master Python fundamentals for data science including NumPy for numerical computing, Pandas for data manipulation, and core programming concepts essential for data analysis workflows."
+      },
+      {
+        "id": 2,
+        "title": "Data Visualization",
+        "content": "Create compelling visualizations using Matplotlib, Seaborn, and Plotly. Learn to communicate insights effectively through charts, graphs, and interactive dashboards."
+      },
+      {
+        "id": 3,
+        "title": "Statistical Analysis",
+        "content": "Apply statistical methods including hypothesis testing, regression analysis, and probability distributions to draw meaningful conclusions from data."
+      },
+      {
+        "id": 4,
+        "title": "Machine Learning Basics",
+        "content": "Introduction to supervised and unsupervised learning algorithms. Understand classification, regression, clustering, and model evaluation techniques."
+      },
+      {
+        "id": 5,
+        "title": "Deep Learning Fundamentals",
+        "content": "Explore neural networks, deep learning architectures, and frameworks like TensorFlow and PyTorch for solving complex problems."
+      },
+      {
+        "id": 6,
+        "title": "Real-World Projects",
+        "content": "Apply your skills to practical projects including predictive modeling, natural language processing, and computer vision applications."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/seed/marketing/400/250",
+    "title": "Digital Marketing Strategy",
+    "category": "Marketing",
+    "level": "Beginner",
+    "description": "Master modern digital marketing techniques including SEO, social media, content marketing, and analytics.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Digital Marketing Foundations",
+        "content": "Understand the digital marketing landscape, key channels, and how to develop an integrated marketing strategy aligned with business goals."
+      },
+      {
+        "id": 2,
+        "title": "SEO and Content Marketing",
+        "content": "Learn search engine optimization techniques, keyword research, on-page and off-page SEO, and how to create content that ranks and converts."
+      },
+      {
+        "id": 3,
+        "title": "Social Media Marketing",
+        "content": "Develop effective social media strategies across platforms. Learn content creation, community management, and paid advertising techniques."
+      },
+      {
+        "id": 4,
+        "title": "Email Marketing Campaigns",
+        "content": "Build and optimize email marketing campaigns. Master segmentation, automation, copywriting, and conversion optimization."
+      },
+      {
+        "id": 5,
+        "title": "Google Analytics",
+        "content": "Track and analyze website performance using Google Analytics. Understand metrics, set up goals, and make data-driven decisions."
+      },
+      {
+        "id": 6,
+        "title": "Paid Advertising",
+        "content": "Master Google Ads, Facebook Ads, and other paid channels. Learn campaign structure, bidding strategies, and ROI optimization."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/seed/react/400/250",
+    "title": "React Development",
+    "category": "Development",
+    "level": "Intermediate",
+    "description": "Build modern, scalable web applications with React, hooks, and state management.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "React Fundamentals",
+        "content": "Learn React basics including JSX, components, props, and the virtual DOM. Understand the component lifecycle and how React efficiently updates the UI."
+      },
+      {
+        "id": 2,
+        "title": "Hooks and State Management",
+        "content": "Master React Hooks including useState, useEffect, useContext, and custom hooks. Learn when and how to use each hook effectively."
+      },
+      {
+        "id": 3,
+        "title": "React Router",
+        "content": "Implement client-side routing with React Router. Create dynamic, multi-page applications with protected routes and navigation."
+      },
+      {
+        "id": 4,
+        "title": "API Integration",
+        "content": "Connect your React apps to REST APIs. Handle asynchronous operations, loading states, and error handling with best practices."
+      },
+      {
+        "id": 5,
+        "title": "Performance Optimization",
+        "content": "Optimize React applications using techniques like memoization, lazy loading, code splitting, and profiling tools."
+      },
+      {
+        "id": 6,
+        "title": "Testing React Components",
+        "content": "Write unit and integration tests using Jest and React Testing Library to ensure code quality and reliability."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/seed/design/400/250",
+    "title": "Graphic Design Mastery",
+    "category": "Design",
+    "level": "Beginner",
+    "description": "Learn professional graphic design using industry-standard tools and principles.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Design Principles",
+        "content": "Master fundamental design principles including balance, contrast, emphasis, movement, pattern, rhythm, and unity for creating visually appealing compositions."
+      },
+      {
+        "id": 2,
+        "title": "Adobe Photoshop Basics",
+        "content": "Learn essential Photoshop tools and techniques for photo editing, retouching, and digital art creation."
+      },
+      {
+        "id": 3,
+        "title": "Vector Graphics with Illustrator",
+        "content": "Create scalable vector graphics, logos, and illustrations using Adobe Illustrator's powerful tools and features."
+      },
+      {
+        "id": 4,
+        "title": "Layout Design",
+        "content": "Design effective layouts for print and digital media. Learn grid systems, hierarchy, and composition techniques."
+      },
+      {
+        "id": 5,
+        "title": "Branding and Identity",
+        "content": "Develop comprehensive brand identities including logos, color palettes, typography, and brand guidelines."
+      },
+      {
+        "id": 6,
+        "title": "Portfolio Development",
+        "content": "Build a professional design portfolio that showcases your best work and attracts clients or employers."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://picsum.photos/seed/machinelearning/400/250",
+    "title": "Machine Learning Engineering",
+    "category": "Data Science",
+    "level": "Advanced",
+    "description": "Build and deploy production-ready machine learning systems at scale.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "ML System Design",
+        "content": "Learn how to design scalable machine learning systems. Understand the ML lifecycle from data collection to model deployment and monitoring."
+      },
+      {
+        "id": 2,
+        "title": "Feature Engineering",
+        "content": "Master techniques for creating effective features from raw data. Learn encoding, scaling, and feature selection methods."
+      },
+      {
+        "id": 3,
+        "title": "Model Training and Tuning",
+        "content": "Optimize model performance through hyperparameter tuning, cross-validation, and ensemble methods."
+      },
+      {
+        "id": 4,
+        "title": "MLOps and Deployment",
+        "content": "Deploy ML models to production using Docker, Kubernetes, and cloud platforms. Implement CI/CD pipelines for ML."
+      },
+      {
+        "id": 5,
+        "title": "Model Monitoring",
+        "content": "Monitor model performance in production, detect drift, and implement strategies for model retraining and updates."
+      },
+      {
+        "id": 6,
+        "title": "Scalable ML Infrastructure",
+        "content": "Build distributed training systems, optimize inference, and manage large-scale ML infrastructure."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://picsum.photos/seed/content/400/250",
+    "title": "Content Marketing",
+    "category": "Marketing",
+    "level": "Intermediate",
+    "description": "Create compelling content that attracts, engages, and converts your target audience.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Content Strategy",
+        "content": "Develop a comprehensive content strategy aligned with business goals. Learn audience research, content planning, and editorial calendars."
+      },
+      {
+        "id": 2,
+        "title": "Copywriting Techniques",
+        "content": "Master persuasive writing techniques. Learn how to write headlines, calls-to-action, and copy that converts."
+      },
+      {
+        "id": 3,
+        "title": "Blog Content Creation",
+        "content": "Create engaging blog posts that rank in search engines and provide value to readers. Learn structure, SEO optimization, and promotion."
+      },
+      {
+        "id": 4,
+        "title": "Video Content Production",
+        "content": "Produce professional video content for marketing. Learn scripting, filming, editing, and distribution strategies."
+      },
+      {
+        "id": 5,
+        "title": "Content Distribution",
+        "content": "Amplify your content reach through multiple channels. Learn promotion strategies and how to repurpose content effectively."
+      },
+      {
+        "id": 6,
+        "title": "Measuring Content ROI",
+        "content": "Track content performance using analytics. Learn to measure engagement, conversions, and demonstrate content marketing ROI."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://picsum.photos/seed/mobile/400/250",
+    "title": "Mobile App Development",
+    "category": "Development",
+    "level": "Advanced",
+    "description": "Build native and cross-platform mobile applications for iOS and Android.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Mobile Development Fundamentals",
+        "content": "Understand mobile app architecture, design patterns, and the differences between native and cross-platform development."
+      },
+      {
+        "id": 2,
+        "title": "React Native Basics",
+        "content": "Build cross-platform mobile apps using React Native. Learn components, navigation, and platform-specific code."
+      },
+      {
+        "id": 3,
+        "title": "Mobile UI/UX Design",
+        "content": "Design intuitive mobile interfaces following iOS and Android design guidelines. Learn touch interactions and mobile-specific patterns."
+      },
+      {
+        "id": 4,
+        "title": "API Integration and Storage",
+        "content": "Connect mobile apps to APIs, implement local storage, and handle offline functionality with proper data synchronization."
+      },
+      {
+        "id": 5,
+        "title": "Performance Optimization",
+        "content": "Optimize mobile app performance including memory management, battery efficiency, and smooth animations."
+      },
+      {
+        "id": 6,
+        "title": "App Store Deployment",
+        "content": "Prepare and publish apps to Apple App Store and Google Play Store. Learn submission requirements and review processes."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://picsum.photos/seed/3ddesign/400/250",
+    "title": "3D Design and Animation",
+    "category": "Design",
+    "level": "Advanced",
+    "description": "Create stunning 3D models, animations, and visual effects for games and films.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "3D Modeling Basics",
+        "content": "Learn fundamental 3D modeling techniques using Blender. Master vertices, edges, faces, and basic modeling tools."
+      },
+      {
+        "id": 2,
+        "title": "Texturing and Materials",
+        "content": "Apply realistic textures and materials to 3D models. Learn UV mapping, procedural textures, and PBR workflows."
+      },
+      {
+        "id": 3,
+        "title": "Lighting and Rendering",
+        "content": "Master 3D lighting techniques and rendering settings to create photorealistic images and animations."
+      },
+      {
+        "id": 4,
+        "title": "Character Animation",
+        "content": "Animate 3D characters using rigging, skinning, and keyframe animation. Learn the principles of animation."
+      },
+      {
+        "id": 5,
+        "title": "Visual Effects",
+        "content": "Create dynamic visual effects including particles, simulations, and compositing for stunning results."
+      },
+      {
+        "id": 6,
+        "title": "Game Asset Creation",
+        "content": "Optimize 3D models and textures for real-time rendering in game engines. Learn the game development pipeline."
+      }
+    ]
+  }
+]

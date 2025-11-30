@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Dashboard - Mini LMS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2 cursor-pointer" onclick="showHome()">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <span class="text-2xl font-bold text-gray-800">LearnHub</span>
+                </div>
+                <div class="flex gap-6">
+                    <button onclick="showHome()" class="text-gray-700 hover:text-blue-600 font-semibold transition">Home</button>
+                    <button onclick="showCourses()" class="text-gray-700 hover:text-blue-600 font-semibold transition">Courses</button>
+                    <button onclick="showAbout()" class="text-gray-700 hover:text-blue-600 font-semibold transition">About</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home View -->
+    <div id="homeView">
+        <!-- Hero Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">Transform Your Future with Learning</h1>
+                <p class="text-xl mb-8 opacity-90">
+                    Access world-class courses in development, design, data science, and marketing
+                </p>
+                <button onclick="showCourses()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-50 transition">
+                    Explore Courses
+                </button>
+            </div>
+        </div>
+
+        <!-- Featured Courses -->
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Featured Courses</h2>
+                <button onclick="showCourses()" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2">
+                    View All 
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="featuredCourses" class="grid md:grid-cols-3 gap-6"></div>
+        </div>
+
+        <!-- Categories -->
+        <div class="bg-gray-50 py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Browse by Category</h2>
+                <div id="categoriesGrid" class="grid md:grid-cols-4 gap-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Listing View -->
+    <div id="courseListingView" class="hidden">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">All Courses</h1>
+            <div id="allCourses" class="grid md:grid-cols-3 gap-6"></div>
+        </div>
+    </div>
+
+    <!-- Course Detail View -->
+    <div id="courseDetailView" class="hidden">
+        <div class="max-w-5xl mx-auto px-4 py-8">
+            <button onclick="showCourses()" class="flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-6 font-semibold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Courses
+            </button>
+            
+            <img id="courseBanner" src="" alt="" class="w-full h-64 object-cover rounded-lg mb-6">
+            
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h1 id="courseTitle" class="text-4xl font-bold text-gray-800 mb-2"></h1>
+                        <div class="flex gap-4 text-sm">
+                            <span id="courseCategory" class="text-blue-600 font-semibold"></span>
+                            <span id="courseLevel" class="text-gray-500"></span>
+                        </div>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-lg">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <p id="courseDescription" class="text-gray-600 mb-6"></p>
+                
+                <!-- Progress Bar -->
+                <div class="mb-8">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Course Progress</span>
+                        <span id="progressPercent" class="text-sm font-semibold text-blue-600">0%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div id="progressBar" class="bg-blue-600 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <!-- Lessons List -->
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Course Lessons</h2>
+                <div id="lessonsList" class="space-y-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lesson Viewer View -->
+    <div id="lessonViewerView" class="hidden">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <button id="backToCourseBtn" class="flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-6 font-semibold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Course
+            </button>
+            
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="mb-6">
+                    <span id="lessonCourseTitle" class="text-sm text-blue-600 font-semibold"></span>
+                    <h1 id="lessonTitle" class="text-4xl font-bold text-gray-800 mt-2 mb-4"></h1>
+                </div>
+                
+                <div class="prose max-w-none mb-8">
+                    <p id="lessonContent" class="text-gray-700 leading-relaxed text-lg"></p>
+                </div>
+                
+                <div class="flex gap-4 pt-6 border-t border-gray-200">
+                    <button id="completeBtn" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition font-semibold flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Mark as Complete
+                    </button>
+                    
+                    <button id="nextLessonBtn" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold flex items-center gap-2 hidden">
+                        Next Lesson
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- About View -->
+    <div id="aboutView" class="hidden">
+        <div class="max-w-4xl mx-auto px-4 py-16">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">About LearnHub</h1>
+            
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    LearnHub is dedicated to providing world-class online education to learners around the globe. 
+                    We believe that education should be accessible, engaging, and effective for everyone, regardless 
+                    of their background or location.
+                </p>
+                
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">What We Offer</h2>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-semibold text-lg text-blue-600 mb-2">Expert-Crafted Courses</h3>
+                        <p class="text-gray-600">Learn from industry professionals with real-world experience in their fields.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-semibold text-lg text-blue-600 mb-2">Flexible Learning</h3>
+                        <p class="text-gray-600">Study at your own pace, anytime and anywhere that suits your schedule.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-semibold text-lg text-blue-600 mb-2">Diverse Topics</h3>
+                        <p class="text-gray-600">Explore courses in development, design, data science, marketing, and more.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="font-semibold text-lg text-blue-600 mb-2">Progress Tracking</h3>
+                        <p class="text-gray-600">Monitor your learning journey with our built-in progress tracking system.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Categories</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We offer comprehensive courses across multiple disciplines:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                    <li><strong>Development:</strong> Front-end, React, Mobile App Development</li>
+                    <li><strong>Design:</strong> UI/UX, Graphic Design, 3D Design & Animation</li>
+                    <li><strong>Data Science:</strong> Python, Machine Learning, Deep Learning</li>
+                    <li><strong>Marketing:</strong> Digital Marketing, Content Marketing, SEO</li>
+                </ul>
+
+                <div class="text-center">
+                    <button onclick="showCourses()" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
+                        Explore Our Courses
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="script.js"></script>
+</body>
+</html>
